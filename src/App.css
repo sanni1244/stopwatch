@@ -1,59 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.stopwatch {
   text-align: center;
-  list-style: none !important;
-  text-decoration: none !important;
+  margin-top: 50px;
+  background: linear-gradient(135deg, #b6fbff 0%, #83a4d4 100%);
+  border-radius: 20px;
+  padding: 30px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.display {
+  font-size: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+  color: #fff;
+  animation: scaleIn 0.5s ease;
 }
 
-@keyframes logo-spin {
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #5190b3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #4b9dc0;
+}
+
+@keyframes scaleIn {
   from {
-    transform: rotate(0deg);
+    transform: scale(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-
-
-
-
-.arrL{
-  display: flex;
-  text-decoration: none ;
-  list-style: none;
-  gap: 1rem;
-
-}
-hr{
-  width: 230px;
 }
