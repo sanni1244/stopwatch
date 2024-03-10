@@ -32,11 +32,9 @@ button {
   transition: background-color 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
 button:hover {
   background-color: #4b9dc0;
 }
-
 @keyframes scaleIn {
   from {
     transform: scale(0);
